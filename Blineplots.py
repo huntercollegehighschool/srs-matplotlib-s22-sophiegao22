@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 x = np.linspace(0, 2, 10)
-#x = np.arange(0, 3, .1)
+x = np.arange(0, 3, .05)
 
 plt.plot(x, x**2, '^g', label='quadratic')
-# add new plot here
-# add new plot here
+plt.plot(x, x, "vb", label = 'linear')
+plt.plot(x, x**3, "xm", label='cubic')
 plt.xlabel('x label')
 plt.ylabel('y label')
 plt.title("Line Plots")
@@ -22,7 +22,6 @@ plt.show()
 
 """
 2. x is a set of number numbers determined by the linspace function from numpy. Adjust the third argument in the linspace function to 100. What does that control?
-
 """
 
 """
